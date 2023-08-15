@@ -1,22 +1,15 @@
-network: GCCWireless
-IP: 10.22.40.10
-terminal command: ssh pi@10.22.40.10
-password: raspberry
 
-network: ATT938
-IP: 192.168.1.84
-ssh pi@192.168.1.84
 
 --> path to hello.asm
 /Users/luciechevreuil/Desktop/Pi/hello.asm
 /Users/luciechevreuil/Desktop/Pi/shippingcost.asm
 
 --> copy file over to Raspberry Pi
-scp /Users/luciechevreuil/Desktop/Pi/hello.asm pi@10.22.40.10:/home/pi/
-scp /Users/luciechevreuil/Desktop/Pi/shippingcost.asm pi@10.22.40.10:/home/pi/
-scp /Users/luciechevreuil/Desktop/Pi/output.asm pi@10.22.40.10:/home/pi/
+scp /Users/luciechevreuil/Desktop/Pi/hello.asm pi@IP:/home/pi/
+scp /Users/luciechevreuil/Desktop/Pi/shippingcost.asm pi@IP:/home/pi/
+scp /Users/luciechevreuil/Desktop/Pi/output.asm pi@IP:/home/pi/
 
-scp /Users/luciechevreuil/Desktop/raspberry-pi/shippingcost.asm pi@192.168.1.84:/home/pi/
+scp /Users/luciechevreuil/Desktop/raspberry-pi/shippingcost.asm pi@IP:/home/pi/
 /Users/luciechevreuil/Desktop/raspberry-pi/shippingcost.asm
 
 --> compile and run assembly code
